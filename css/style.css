@@ -1,0 +1,482 @@
+body {
+    font-family: "Roboto", sans-serif;
+    background-color: #FDFCFC;
+    overflow-x: hidden;
+    padding: 0%;
+    margin: 0%;
+    width: 100%;
+}
+
+.header {
+    width: 100vw;
+    background-color: #FDFCFC;
+    background-image: url("../images/Header.png");
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.logo {
+    color: aqua;
+    background-color: #046DCF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title1 {
+    color: #161616;
+    text-align: center;
+    padding: 0%;
+    font-weight: bold;
+}
+
+.header span {
+    font-weight: 400;
+    color: black;
+    letter-spacing: 0.05em;
+    font-family: 'Poppins', sans-serif;
+    z-index: 50;
+}
+.custom-div {
+    display: flex;
+    align-items: center;
+    background-color: #046DCF;
+    margin-top: 10rem;
+    width: 100%;
+    white-space: nowrap;
+    font-family: 'Six Caps', sans-serif;
+    letter-spacing: 3px;
+    color: white;
+    height: 20rem;
+    overflow: hidden;
+    position: relative;
+}
+.custom-div h1 {
+    position: absolute;
+    transform: translateX(-50%);
+    animation: scrollText 10s linear infinite;
+}
+
+@keyframes scrollText {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.person {
+    position: absolute;
+}
+
+.blueOne {
+    background-color: #046DCF;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: white;
+    padding: 0.5rem 1rem;
+    margin-top: 1rem;
+    margin-bottom: 0.75rem;
+    cursor: pointer;
+    border: none;
+    z-index: 50;
+    border-radius: 0.5rem;
+}
+
+.dot {
+    height: 0.5rem;
+    width: 0.5rem;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.partenaire {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* gap: 1rem; */
+    background-color: #0c0c0c;
+    color: white;
+}
+
+.section {
+    gap: 4rem;
+}
+
+.innerSection {
+    background-color: white;
+    padding: 2rem;
+}
+
+.innerSection h1 {
+    font-size: 17px;
+    font-weight: 700;
+    color: #0D83F2;
+    line-height: 36px;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.innerSection p {
+    padding: 0%;
+    color: #2B2B2B;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+}
+
+.advImg {
+    background-color: #046DCF;
+    border-radius: 9999px;
+    width: 4rem;
+    height: 4rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 8px;
+}
+
+.advImg img {
+    max-width: 100%;
+    max-height: 100%;
+    margin-top: 0.5rem;
+}
+
+.advantages button {
+    background-color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    line-height: 35px;
+    font-size: 29px;
+    text-transform: uppercase;
+    color: #0D83F2;
+    padding: 0.5rem 1rem;
+    margin-top: 2rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 0.5rem;
+}
+
+.MENTOR-right {
+    height: 40rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    padding-left: 4rem;
+    padding-right: 2rem;
+    margin-left: 4rem;
+    position: relative;
+}
+
+.yoan3 {
+    position: absolute;
+}
+
+.signImg {
+    font-family: 'Kalam';
+    font-size: 4rem;
+    position: absolute;
+    bottom: 9rem;
+    transform: rotate(-32deg);
+    right: 20%;
+}
+
+.title {
+    color: #0D83F2;
+    font-size: 1.6rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.promo1 {
+    text-align: center;
+    width: 19rem;
+}
+
+.promo1 h1 {
+    font-size: 22px;
+    color: #FDFCFC;
+
+}
+
+.resultat {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
+.Module {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
+.second {
+    display: flex;
+    overflow: hidden;
+    position: relative;
+}
+
+.slide-container {
+    display: flex;
+    transition: transform 0.3s ease;
+    position: relative;
+    width: 70%;
+}
+
+.slide {
+    flex: 0 0 100%;
+}
+
+.slide img {
+    width: 20rem;
+    display: block;
+}
+
+.slider-buttons {
+    position: absolute;
+    bottom: 10px;
+    left: 10%;
+    transform: translateX(-50%);
+}
+
+.slider-button {
+    background-color: transparent;
+    border: 2px solid black;
+    color: black;
+    font-size: 16px;
+    width: 30px;
+    height: 2px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.slider-button:hover {
+    background-color: black;
+}
+
+#prevBtn {
+    float: left;
+}
+
+#nextBtn {
+    float: right;
+}
+
+
+
+@media screen and (min-width: 360px) {
+    .custom-div h1 {
+        font-size: 9rem;
+     
+    }
+
+    .header {
+        height: 100%;
+    }
+
+    .header span {
+        font-size: 0.9rem;
+
+    }
+
+    .logo {
+        width: 30%;
+        height: 8%;
+    }
+
+    .person {
+        top: 24%;
+    }
+
+    .personImg {
+        width: 22rem;
+        height: 24rem;
+    }
+
+    .partenaire {
+        padding: 1rem;
+        gap: 2px;
+    }
+
+    .last {
+        font-family: 'Vampiro One', cursive;
+        font-size: 1.2rem;
+    }
+
+    .Kraken {
+        font-family: 'Anton', sans-serif;
+        font-size: 1.2rem;
+    }
+
+    .treking {
+        font-family: 'Bebas Neue', sans-serif;
+        font-size: 1.2rem;
+    }
+
+    .section .MENTOR {
+        display: grid;
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+
+    .title {
+        color: #0D83F2;
+        font-size: 2rem;
+        font-weight: bolder;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .custom-div h1 {
+        font-size: 13rem;
+     
+    }
+
+    .header {
+        height: 100%;
+    }
+
+    .header span {
+        font-size: 1.8rem;
+
+    }
+
+    .logo {
+        width: 18%;
+        height: 8%;
+    }
+
+    .person {
+        top: 18%;
+        text-align: center;
+    }
+
+    .personImg {
+        width: 90%;
+        height: 90%;
+    }
+
+    .partenaire {
+        padding: 2rem;
+    }
+
+    .last {
+        font-family: 'Vampiro One', cursive;
+        font-size: 2rem;
+    }
+
+    .Kraken {
+        font-family: 'Anton', sans-serif;
+        font-size: 2rem;
+    }
+
+    .treking {
+        font-family: 'Bebas Neue', sans-serif;
+        font-size: 2rem;
+    }
+
+    .section {
+        display: grid;
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+
+    .MENTOR {
+        display: grid;
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .custom-div h1 {
+        font-size: 16rem;
+     
+    }
+    .header {
+        height: 130%;
+    }
+
+    .header span {
+        font-size: 2rem;
+
+    }
+
+    .logo {
+        width: 18%;
+        height: 8%;
+    }
+
+    .person {
+        top: 30%;
+    }
+
+    .personImg {
+        width: 100%;
+        height: 100%;
+    }
+
+    .header button {
+        font-size: 2rem;
+    }
+    .mockup button {
+        font-size: 2rem;
+    }
+    .resultat button {
+        font-size: 2rem;
+    }
+
+    .partenaire {
+        padding-left: 10rem;
+        padding-right: 10rem;
+        padding-top: 3.7rem;
+        padding-bottom: 3rem;
+    }
+
+    .last {
+        font-family: 'Vampiro One', cursive;
+        font-size: 2rem;
+    }
+
+    .Kraken {
+        font-family: 'Anton', sans-serif;
+        font-size: 2rem;
+    }
+
+    .treking {
+        font-family: 'Bebas Neue', sans-serif;
+        font-size: 2rem;
+    }
+
+    .section {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        margin-left: 8rem;
+        margin-right: 8rem;
+    }
+
+    .date {
+        position: absolute;
+        right: 1rem;
+        bottom: 2rem;
+    }
+
+    .MENTOR {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .resultat {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    }
+
+    .Module {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+}
